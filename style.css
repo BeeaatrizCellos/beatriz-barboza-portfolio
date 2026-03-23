@@ -1,0 +1,103 @@
+/* Limpando margens padrão que o navegador tem para o site ocupar a tela toda */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurando a fonte do site e a cor de fundo cinza clarinho */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do topo do site. Coloquei fundo escuro e centralizei o menu */
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/*  itens do menu ficando um do lado do outro tirei as bolinhas da lista */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* espaço entre os nomes do menu */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Tirei o sublinhado dos links e deixei a letra branca */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*  Efeito para mudar a cor do link quando passo o mouse em cima - solicitado pelo prof */
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* limitação da largura do conteúdo no meio da tela para não ficar espalhado */
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    min-height: 80vh;
+}
+
+/*  Estilo para os títulos das páginas */
+h1 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #222;
+    display: inline-block;
+}
+
+/* Estilo do formulário de contato para os campos ficarem em pé  */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Bordas e espaços internos dos campos de digitar */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão de enviar */
+button {
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para destacar cada projeto na página de Portfólio */
+.projeto {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #222;
+}
+
+/* Estilo do rodapé lá no fim da página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
